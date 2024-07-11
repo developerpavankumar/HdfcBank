@@ -1,36 +1,100 @@
+<!DOCTYPE html>
 <html>
-    <head>
-<style>
+<head>
+    <style>
+    #heading{
+        color:blue;
+        background-color: aqua;
+        font-size:36px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        height:65px;
+        display: flex;
+       justify-content: space-around;
+       align-items: center;
+       margin-top:0%;
+    }
+    #welcometext{
+    color:rgb(17, 255, 0);
+    font-weight: bold;
+    font-size:25px;
+    }
+ 
     body{
-        background-image:url(background.png);
-        width:100%;
-        background-repeat:none;
-        background-size:100%;
+        background-image: url("netflix_files/background.png");
+        background-size: 100%;
     }
-    button{
-        color:brown;
+    #id,#password{
+        margin-left:389px;
+        height:29px;
+        width:289px;
         border-radius:9px;
-        size:265px;
     }
+    #password{
+        margin-top:18px;
+        height:36px;
+        width:389px;
+    }
+    #password{
+        margin-top:18px;
+        margin-left:395px;
+        height:46px;
+        width:520px;
+        font-weight: bold;
+    }
+    #id{
+        height:46px;
+        width:520px;
+        font-weight: bold;
+        font-size:16px;
+    }
+
     #container{
-        margin-top:58px;
-        margin-left:526px;
-        align-items:center;
-    
+        height:250px;
+        wwidth:520px;
+        align-items: center;
+       // background-image:url(netflix_files/download.jpg);
+        justify-content: space-around;
+        justify-content: space-between;
 
     }
-</style>
-    </head>
-        <body>
-            <div id="container">
-            <div>
-      <button><input type="text" title="username" placeholder="enter username"</button>
+.button2{
+        margin-left:410px;
+        height:35px;
+        width:96px;
+        border-radius:6px;
+        background-color:rgb(30, 154, 216);
+        color:white;
+        margin-right:46px;
+        
+    }
+    .button1{
+        height:35px;
+        width:96px;
+        margin-left:9px;
+        border-radius:6px;
+        background-color:rgb(30, 154, 216);
+        color:white;
+    }
+
+                </style>
+              
+</head>
+<body>
+    <h1 id="heading"> Welcome to HDFC BANK</h1>
+    <marquee><h3 id="welcometext" >
+        "Your trust is our greatest asset. With our state-of-the-art security measures, we ensure that your financial future is protected every step of the way."
+    </h3>
+    </marquee>
+    <div id="container">"
+        <input type="text" placeholder="please enter user id" id="id">user id</input type><br>
+        <input type="password" placeholder="please enter your passowrd" id="password">password</input type>
+        <br>
+        <br>
+        <div id="buttons">
+        <button type="submit"  style="border-radius: 6px" class="button2">submit</button>
+        <button type="button1" class="button1">cancel</button>
     </div>
-    <div>
-        <button><input type="password" placeholder="enter password"</button>
-    </div>
-    <button>submit</button>
-    <button title="cancel">reset</button>
-</div>
-        </body>
+       </div>
+</body>
 </html>
