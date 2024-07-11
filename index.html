@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" name="viewport width=device-width" initial-scale="1">
+    <link rel="icon" href="netflix_files/amazon2.png">
+    <head>
+<style>
+    #heading{
+        color:blue;
+        background-color: aqua;
+        font-size:36px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        padding-top: 0; 
+        height:65px;
+        display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding-left:26%;
+                  }
+              
+              
+          .list{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display:flex;
+            padding:0; 
+            margin:0;
+            justify-content: space-between;
+          }
+          .ulli{
+            display: inline;
+            padding:15px;
+            padding-top: 0;
+            text-align: center;
+            height: auto;
+            justify-content:space-between;
+            color:white;
+            padding-left:56px;
+            font-size: 16px;
+
+          }
+          
+          #div1{
+            background-color:rgb(104, 68, 223);
+            height:26px;
+            display:inline-flexbox;
+            justify-content:space-between;
+          }
+          .ulli:hover{
+            background-color: brown;
+            color:yellow;
+          }
+       #heading,.div1,#aside,#marquee{
+    margin: 0;
+    padding-top:0;
+    padding-bottom:0;
+          
+}
+#marquee{
+    color:fuchsia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#iframe{
+    align-items:center;
+    padding-left:386px;
+    padding-top: 25px;
+}
+#aside{
+    align-items:center;
+}
+#marquee p {
+            background-color: #38b546; /* Dark gray background for text */
+            color: #fff; /* White text color */
+            display: inline; /* Ensures inline display */
+            padding: 5px; /* Adds padding for better readability */
+        }
+#aside{
+    padding:0;
+    width:25%;
+    float:right;
+}     
+#login{
+    padding-left:55%
+    justify-content:space-around;
+    color:red;
+    background-color:rgb(78, 206, 135);
+    border-radius: 5px;
+    font-weight:bold;
+}
+#register{
+    padding-left:55%
+    justify-content:space-around;
+    color:red;
+    background-color:rgb(78, 206, 135);
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+#menu2{
+    display: none;
+}
+#services:hover #menu2{
+      display:block;
+        padding:18px;
+        display: flexbox;
+        background-color:white;
+        cursor: pointer;
+        height:auto;
+        width:auto;
+        text-align: left;
+    }
+    
+    #services{
+        padding-left: 5%;
+        position:sticky;
+    }
+    #loans,#Acounts{
+        display: none;
+    }
+    #loansclass:hover #loans{
+        display: block;
+        text-align: left;
+        background-color: white;
+        position: relative;
+        transition:25s;
+
+    }
+    #ApplyforAccount:hover #Acounts{
+        display: block;
+        text-align: left;
+        background-color: white;
+        position: relative;
+
+    }
+
+
+</style>
+    </head>
+    <body>
+        <h1 id="heading"> Welcome to HDFC BANK <button id="login"><a href=login.html>login</a></button>
+            <button id="register">Register</button></h1>
+        <div id="div1">
+            <ul class="list">
+                <li class="ulli" id="home">Home</li>
+                <li class="ulli"  id="services">Services
+                    <nav id="menu2">
+                        <ul>
+                        <li style="text-align: left;"><a href=bank.htmlt>DebitCard</a></li>
+                        <li style="text-align: left;"><a href=index.html>Credit Card</a></li>
+                        <li  style="text-align: left;"><a href=demo.html>Book</a> </li>
+                        <li><a href="demo.html">Fixed Deposit</a></li>
+                    </ul>
+                    </nav>
+                </li>
+                <li class="ulli">feedback</li>
+                <li class="ulli">contact bank</li>
+                <li class="ulli" id="menu">Menu</li>
+                <li class="ulli" id="ApplyforAccount">Apply for Account
+                    <nav id="Acounts"><ul>
+                        <li><a href=NewAccount.html>Personal Account</a></li>
+                        <li><a href=bank.htmlt>Business Account</a></li>
+                        <li><a href=bank.htmlt>Joint Account</a></li>
+                        <li><a href=bank.htmlt>Zero Account</a></li>
+                        <li><a href=bank.htmlt>Gold Premium Acocunt</a>/<li>
+                    </ul></nav>
+                </li>
+                <li class="ulli" id="loansclass">Loans
+                    <nav id="loans"><ul>
+                        <li><a href=bank.htmlt>Agricultural Loans</a></li>
+                        <li><a href=bank.htmlt>Business Loan</a></li>
+                        <li><a href=bank.htmlt>Education Loan</a></li>
+                        <li><a href=bank.htmlt>Gold Loan</a></li>
+                        <li><a href=bank.htmlt>Commercial Loan</a>/li>
+                    </ul></nav>
+                </li>
+                <li class="ulli">Corporate website</li>
+            </ul>
+        </div>
+        <marquee id="marquee" behavior="scroll" direction="left to right"><p>Discover the power of higher interest rates at HDFC BANK – where your savings grow faster and your financial goals become reality</p></marquee>
+        <div id="personal Banking"></div>
+        
+        <div id="iframe">
+        <iframe target="self" style="border:solid black 1px;" height="196px" width="356px" src="netflix_files/video1.mp4">
+        </iframe>
+    </div>
+    </body>
+</html>

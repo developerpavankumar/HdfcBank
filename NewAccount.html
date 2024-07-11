@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                align-items: center;
+                border:1px solid black;
+            }
+            
+            #row{
+                margin-left:9%;
+                padding-top:25px;
+                height:15px;
+                width:55%;
+                background-color: azure;
+                color:blue;
+                font-size:16px;
+                border-radius:6px;
+                margin-bottom:3px;
+            }
+            #heading{
+        color:blue;
+        background-color: aqua;
+        font-size:36px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        height:65px;
+        display: flex;
+       justify-content: space-around;
+       align-items: center;
+       margin-top:0%;
+       margin-bottom:0%;
+            }
+            .forms{
+                color:rgb(218, 218, 229);
+                background-color:black;
+                margin-top:0%;
+                margin-bottom:0.5%;
+            }
+            #proofs{
+                color:white;
+                background-color: black;
+                font-size: 26px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-align:center;
+            }
+            .fullbox{
+                height:65%;
+                width:100%;
+            }
+            #buttons{
+                height:650px;
+                width:180px;
+                margin-top:56px;
+                margin-left:35%;
+            }
+            #submit{
+                height:36px;
+                border-radius:9px;
+                background-color:rgb(30, 154, 216);
+                color:white;
+            }
+            #reset{
+                height:36px;
+                border-radius:9px;
+                margin-left:16px;
+                background-color:rgb(30, 154, 216);
+                color:white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1 id="heading"> Welcome to Hdfc Bank</h1>
+        <h1 class="forms" style="text-align: center;"> Account Creation Form </h1>
+        <div class="fullbox">
+<form class="form" action="submit">
+    <div class="container">
+        <input type="text" placeholder="please enter your First name" id="row"><b>First name</b><br>
+        <input type="text" placeholder="please enter your Middle name" id="row"><b>Middle name</b><br>
+        <input type="text" placeholder="please enter your Last name" id="row"><b>Last name</b><br>
+        <input type="number" placeholder="please enter your mobile number" id="row"><b>Mobile Number</b><br>
+        <input type="text" placeholder="please enter your address" id="row"><b>Address</b><br>
+        <input type="text" placeholder="please enter your city" id="row"><b>City</b><br>
+        <input type="number" placeholder="please enter your pincode" id="row"><b>Pincode</b><br>
+    </div>
+    <div class="container">
+        <h1 class="forms" style="text-align: center;">Proofs</h1>
+        <input type="number" placeholder="please enter your Aadhar Number" id="row"><b>Aadhar Number</b><br>
+        <input type="number" placeholder="please enter your Pan Card Number" id="row"><b>Pan Number</b><br>
+        <input type="number" placeholder="please enter your Mobile Number" id="row"><b>Mobile Number</b><br>
+    </div>
+    <div id="buttons">
+    <button type="submit" id="submit">Submit</button>
+    <button type="reset" id="reset">Cancel</button>
+    </div>
+</form>
+</div>
+    </body>
+</html>
